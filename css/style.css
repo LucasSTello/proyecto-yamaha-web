@@ -1,0 +1,194 @@
+/* style.css */
+
+/* Variables CSS para colores */
+:root {
+    --color-yamaha-azul: #003366;
+    --color-yamaha-rojo: #F00000;
+    --color-fondo-claro: #f0f0f0;
+    --color-fondo-oscuro: #111;
+    --color-texto-principal: #333;
+    --color-blanco: #ffffff;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--color-yamaha-azul);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    color: var(--color-yamaha-azul);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--color-blanco);
+    padding: 10px 0;
+    border-bottom: 2px solid var(--color-yamaha-azul);
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Sección Hero */
+#inicio {
+    padding: 0;
+    text-align: center;
+}
+
+#inicio .contenedor img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sobre Nosotros */
+#sobre-nosotros {
+    padding: 40px 0;
+    background-color: var(--color-blanco);
+}
+
+#sobre-nosotros .contenido-doble {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#sobre-nosotros .contenido-doble img {
+    max-width: 50%;
+}
+
+/* Modelos */
+#modelos {
+    padding: 40px 0;
+}
+
+.lista-modelos {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.lista-modelos li {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lista-modelos img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contacto */
+#contacto {
+    padding: 40px 0;
+    background-color: var(--color-yamaha-azul);
+    color: var(--color-blanco);
+}
+
+#contacto h2 {
+    color: var(--color-blanco);
+}
+
+.campo-form {
+    margin-bottom: 15px;
+}
+
+.campo-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo-form input, .campo-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contacto button {
+    background-color: var(--color-yamaha-rojo);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Pie de Página */
+footer {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-blanco);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+/* Media Queries para Responsividad Móvil */
+@media (max-width: 768px) {
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    #sobre-nosotros .contenido-doble {
+        flex-direction: column;
+    }
+
+    #sobre-nosotros .contenido-doble img {
+        max-width: 100%;
+    }
+    
+}
