@@ -190,5 +190,45 @@ footer {
     #sobre-nosotros .contenido-doble img {
         max-width: 100%;
     }
-    
 }
+
+
+/* Estilos del carrusel */
+ .slider-box { 
+    width: 1300px;
+    max-width: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+ .slider-box ul {
+    display: flex;
+    padding: 0%;
+    width: 300%;
+    animation: slide 10s infinite alternate ease-in-out;
+ }
+
+ .slider-box li {
+    width: 100%;
+    list-style: none;
+ }
+
+ .slider-box img {
+    width: 100%;
+ };
+
+ @keyframes slider-box {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+ }
+
+ 
