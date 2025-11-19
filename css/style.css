@@ -1,234 +1,191 @@
-/* style.css */
-
-/* Variables CSS para colores */
-:root {
-    --color-yamaha-azul: #003366;
-    --color-yamaha-rojo: #F00000;
-    --color-fondo-claro: #f0f0f0;
-    --color-fondo-oscuro: #111;
-    --color-texto-principal: #333;
-    --color-blanco: #ffffff;
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #003366;
 }
 
-/* Estilos Generales */
+#modelos .lista-modelos li {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-fondo-claro);
-    color: var(--color-texto-principal);
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 .contenedor {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 a {
-    color: var(--color-yamaha-azul);
-    text-decoration: none;
-}
-
-h1, h2, h3 {
-    text-transform: uppercase;
-    color: var(--color-yamaha-azul);
+  color: #003366;
+  text-decoration: none;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Encabezado */
 header {
-    background-color: var(--color-blanco);
-    padding: 10px 0;
-    border-bottom: 2px solid var(--color-yamaha-azul);
+  background-color: #ffffff;
+  padding: 10px 0;
+  border-bottom: 2px solid #003366;
 }
-
 header .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 header .logo img {
-    height: 40px;
+  height: 40px;
 }
-
 header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/* Sección Hero */
 #inicio {
-    padding: 0;
-    text-align: center;
+  padding: 0;
+  text-align: center;
 }
-
 #inicio .contenedor img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* Sobre Nosotros */
 #sobre-nosotros {
-    padding: 40px 0;
-    background-color: var(--color-blanco);
+  padding: 40px 0;
+  background-color: #ffffff;
 }
-
 #sobre-nosotros .contenido-doble {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
-
 #sobre-nosotros .contenido-doble img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
-/* Modelos */
 #modelos {
-    padding: 40px 0;
+  padding: 40px 0;
+}
+#modelos .lista-modelos {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+#modelos .lista-modelos li img {
+  width: 100%;
+  height: auto;
 }
 
-.lista-modelos {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.lista-modelos li {
-    background-color: var(--color-blanco);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.lista-modelos img {
-    width: 100%;
-    height: auto;
-}
-
-/* Contacto */
 #contacto {
-    padding: 40px 0;
-    background-color: var(--color-yamaha-azul);
-    color: var(--color-blanco);
+  padding: 40px 0;
+  background-color: #003366;
+  color: #ffffff;
 }
-
 #contacto h2 {
-    color: var(--color-blanco);
+  color: #ffffff;
 }
-
-.campo-form {
-    margin-bottom: 15px;
+#contacto .campo-form {
+  margin-bottom: 15px;
 }
-
-.campo-form label {
-    display: block;
-    margin-bottom: 5px;
+#contacto .campo-form label {
+  display: block;
+  margin-bottom: 5px;
 }
-
-.campo-form input, .campo-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+#contacto .campo-form input,
+#contacto .campo-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
 }
-
 #contacto button {
-    background-color: var(--color-yamaha-rojo);
-    color: var(--color-blanco);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
+  background-color: #F00000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-/* Pie de Página */
 footer {
-    background-color: var(--color-fondo-oscuro);
-    color: var(--color-blanco);
-    padding: 20px 0;
-    text-align: center;
+  background-color: #111;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .copyright {
+  margin-top: 15px;
+  font-size: 0.8em;
 }
 
-.copyright {
-    margin-top: 15px;
-    font-size: 0.8em;
+.slider-box {
+  width: 1300px;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 10s infinite ease-in-out;
+}
+.slider-box li {
+  list-style: none;
+  width: 100%;
+}
+.slider-box img {
+  width: 100%;
+  display: block;
 }
 
-/* Media Queries para Responsividad Móvil */
+@keyframes slide {
+  0%, 20% {
+    transform: translateX(0);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 100% {
+    transform: translateX(-300%);
+  }
+}
 @media (max-width: 768px) {
-    header .contenedor {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header nav ul li {
-        margin: 0 10px;
-    }
-
-    #sobre-nosotros .contenido-doble {
-        flex-direction: column;
-    }
-
-    #sobre-nosotros .contenido-doble img {
-        max-width: 100%;
-    }
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav ul li {
+    margin: 0 10px;
+  }
+  #sobre-nosotros .contenido-doble {
+    flex-direction: column;
+  }
+  #sobre-nosotros .contenido-doble img {
+    max-width: 100%;
+  }
 }
 
-
-/* Estilos del carrusel */
- .slider-box { 
-    width: 1300px;
-    max-width: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-
- .slider-box ul {
-    display: flex;
-    padding: 0%;
-    width: 300%;
-    animation: slide 10s infinite alternate ease-in-out;
- }
-
- .slider-box li {
-    width: 100%;
-    list-style: none;
- }
-
- .slider-box img {
-    width: 100%;
- };
-
- @keyframes slider-box {
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
- }
-
- 
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@use "variables" as v;
+
+%title {
+  text-transform: uppercase;
+  color: v.$yamaha-blue;
+}
+
+%card {
+  background: v.$white;
+  padding: 20px;
+  border-radius: v.$radius;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}

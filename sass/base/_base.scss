@@ -1,0 +1,30 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+@use "../abstract/extends";
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: v.$gray-light;
+  color: v.$text-dark;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.contenedor {
+  @include m.container;
+}
+
+a {
+  color: v.$yamaha-blue;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  @extend %title;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}

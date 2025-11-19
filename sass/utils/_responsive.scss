@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  header {
+    .contenedor {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(0.10);
+      }
+    }
+  }
+
+  #sobre-nosotros {
+    .contenido-doble {
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

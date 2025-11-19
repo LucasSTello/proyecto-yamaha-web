@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@mixin btn($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: v.$radius;
+  cursor: pointer;
+  text-transform: uppercase;
+}

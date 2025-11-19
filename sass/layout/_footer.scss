@@ -1,0 +1,13 @@
+@use "../abstract/variables" as v;
+
+footer {
+  background-color: v.$dark;
+  color: v.$white;
+  padding: 20px 0;
+  text-align: center;
+
+  .copyright {
+    margin-top: 15px;
+    font-size: .8em;
+  }
+}

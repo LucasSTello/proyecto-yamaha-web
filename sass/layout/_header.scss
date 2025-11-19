@@ -1,0 +1,29 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
+header {
+  background-color: v.$white;
+  padding: v.$spacing 0;
+  border-bottom: 2px solid v.$yamaha-blue;
+
+  .contenedor {
+    @include m.flex-between;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+}
